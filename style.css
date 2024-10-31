@@ -1,0 +1,158 @@
+#title {
+  font-size: 30px;
+  text-align: center;
+}
+#historyfunc {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+}
+#historyclick {
+  display: none;
+  height: 100%;
+}
+#parent {
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+.Container {
+  display: grid;
+  height: 78%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+}
+button {
+  cursor: pointer;
+  box-shadow: lightgray 0px 0px 8px 0px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+#deletelast {
+  rotate: 180deg;
+}
+#display {
+  width: 98%;
+  height: 15%;
+  margin-bottom: 30px;
+  box-shadow: lightgray 0px 2px 8px 0px;
+  border: none;
+  font-size: 30px;
+  text-align: end;
+  padding-right: 10px;
+}
+#equalTo {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+}
+#historybtn {
+  padding-top: 5px;
+  width: 500px;
+  margin: auto;
+}
+.historydiv {
+  height: 100%;
+}
+.historydiv > p {
+  overflow-y: scroll;
+  text-align: end;
+  height: 90%;
+  font-size: 25px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.historydiv > p > span {
+  font-weight: 600;
+}
+.question {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+.answer {
+  margin: 5px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  #parent {
+    width: 400px;
+    height: 500px;
+  }
+  #historybtn {
+    width: 400px;
+  }
+  .Container {
+    height: 78%;
+  }
+  #display {
+    width: 98%;
+    height: 15%;
+    font-size: 30px;
+  }
+  .historydiv > p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #parent {
+    width: 350px;
+    height: 500px;
+  }
+  #historybtn {
+    width: 350px;
+  }
+  .Container {
+    height: 78%;
+  }
+  #display {
+    width: 98%;
+    height: 15%;
+    font-size: 25px;
+  }
+  .historydiv > p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #parent {
+    width: 250px;
+    height: 350px;
+  }
+  #historybtn {
+    width: 250px;
+  }
+  .Container {
+    height: 78%;
+  }
+  #display {
+    width: 98%;
+    height: 15%;
+    font-size: 20px;
+  }
+  button {
+    font-size: 20px;
+  }
+  .historydiv > p {
+    font-size: 17px;
+  }
+}
